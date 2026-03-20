@@ -601,3 +601,13 @@ Fri Mar 20 11:23:18 PM UTC 2026:
  tests:  5|1
 total_score: 50/70
 2490d19
+Fri Mar 20 11:24:46 PM UTC 2026: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:142:10: error: assignment to ‘char’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+  142 |    *dato = top(pila);
+      |          ^
+aabcc26
