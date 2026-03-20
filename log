@@ -424,3 +424,29 @@ exercises.c:131:67: error: invalid type argument of unary ‘*’ (have ‘int�
   131 |          if(dato == '(' || dato == '[' || dato == '{') push(pila, *dato);
       |                                                                   ^~~~~
 e7890eb
+Fri Mar 20 11:11:03 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:18: error: comparison between pointer and integer [-Werror]
+  131 |          if(dato == '(' || dato == '[' || dato == '{') push(pila, *dato);
+      |                  ^~
+exercises.c:131:33: error: comparison between pointer and integer [-Werror]
+  131 |          if(dato == '(' || dato == '[' || dato == '{') push(pila, *dato);
+      |                                 ^~
+exercises.c:131:48: error: comparison between pointer and integer [-Werror]
+  131 |          if(dato == '(' || dato == '[' || dato == '{') push(pila, *dato);
+      |                                                ^~
+exercises.c:131:67: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  131 |          if(dato == '(' || dato == '[' || dato == '{') push(pila, *dato);
+      |                                                                   ^~~~~
+      |                                                                   |
+      |                                                                   char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+cc1: all warnings being treated as errors
+13a6e3e
