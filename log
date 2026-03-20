@@ -227,3 +227,20 @@ exercises.c:68:11: error: returning ‘int *’ from a function with return type
       |           ^~~~
 cc1: all warnings being treated as errors
 2f27f35
+Fri Mar 20 10:41:18 PM UTC 2026: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:10: error: ‘elemento’ undeclared (first use in this function)
+   63 |    while(elemento != NULL)
+      |          ^~~~~~~~
+exercises.c:63:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:65:15: error: assignment to ‘int’ from ‘int **’ makes integer from pointer without a cast [-Wint-conversion]
+   65 |          cont += &dato;
+      |               ^~
+exercises.c:68:11: error: returning ‘int *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Wint-conversion]
+   68 |    return &cont;
+      |           ^~~~~
+c0bbede
