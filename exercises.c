@@ -128,13 +128,13 @@ int parentesisBalanceados(char *cadena) {
    for(int i = 0; i < strlen(cadena); i++)
       {
          dato = cadena[i];
-         if(dato == '(' || dato == '[' || dato == '{') push(pila, dato);
+         if(dato == '(' || dato == '[' || dato == '{') push(pila, *dato);
          else if(dato == ')' || dato == ']' || dato == '}')
          {
             
             char* aux = top(pila);
             if(aux == NULL) return 0;
-            else if(aux == '(' && dato != ')' || aux == '[' && dato != ']' || aux == '{' && dato != '}')
+            else if((aux == '(' && dato != ')') ||( aux == '[' && dato != ']') || (aux == '{' && dato != '}'))
                return 0;
          }
       }
