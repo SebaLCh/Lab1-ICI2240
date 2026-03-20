@@ -65,3 +65,14 @@ exercises.c:65:28: error: expected ‘;’ before ‘}’ token
       |       ~                     
 cc1: all warnings being treated as errors
 d5a6d6d
+Fri Mar 20 05:58:47 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:18: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   64 |          cont += (int)elemento;
+      |                  ^
+cc1: all warnings being treated as errors
+f7cf17f
