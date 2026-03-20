@@ -76,3 +76,13 @@ exercises.c:64:18: error: cast from pointer to integer of different size [-Werro
       |                  ^
 cc1: all warnings being treated as errors
 f7cf17f
+Fri Mar 20 05:59:13 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:15: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   64 |          cont += (int*)elemento;
+      |               ^~
+2cd7f31
