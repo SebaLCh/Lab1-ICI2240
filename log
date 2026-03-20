@@ -484,3 +484,32 @@ exercises.c:126:10: note: ‘dato’ was declared here
       |          ^~~~
 cc1: all warnings being treated as errors
 68316ea
+Fri Mar 20 11:12:21 PM UTC 2026: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:132:23: error: comparison between pointer and integer [-Werror]
+  132 |          else if(dato == ')' || dato == ']' || dato == '}')
+      |                       ^~
+exercises.c:132:38: error: comparison between pointer and integer [-Werror]
+  132 |          else if(dato == ')' || dato == ']' || dato == '}')
+      |                                      ^~
+exercises.c:132:53: error: comparison between pointer and integer [-Werror]
+  132 |          else if(dato == ')' || dato == ']' || dato == '}')
+      |                                                     ^~
+exercises.c:137:62: error: comparison between pointer and integer [-Werror]
+  137 |                else if((*aux == '(' && *dato != ')') ||( aux == '[' && *dato != ']') || (aux == '{' && *dato != '}'))
+      |                                                              ^~
+exercises.c:137:94: error: comparison between pointer and integer [-Werror]
+  137 |                else if((*aux == '(' && *dato != ')') ||( aux == '[' && *dato != ']') || (aux == '{' && *dato != '}'))
+      |                                                                                              ^~
+exercises.c:130:16: error: ‘dato’ may be used uninitialized [-Werror=maybe-uninitialized]
+  130 |          *dato = cadena[i];
+      |          ~~~~~~^~~~~~~~~~~
+exercises.c:126:10: note: ‘dato’ was declared here
+  126 |    char* dato;
+      |          ^~~~
+cc1: all warnings being treated as errors
+ceac729
