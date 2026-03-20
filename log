@@ -258,3 +258,9 @@ exercises.c:66:10: error: ‘elemento’ undeclared (first use in this function)
       |          ^~~~~~~~
 exercises.c:66:10: note: each undeclared identifier is reported only once for each function it appears in
 5c3090b
+Fri Mar 20 10:42:14 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  3|2
+total_score: 30/70
+e92ee58
