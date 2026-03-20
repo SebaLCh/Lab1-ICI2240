@@ -450,3 +450,23 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
       |                         ~~~~~~^~~~
 cc1: all warnings being treated as errors
 13a6e3e
+Fri Mar 20 11:11:28 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:34: error: comparison between pointer and integer [-Werror]
+  131 |          if(*dato == '(' || dato == '[' || dato == '{') push(pila, dato);
+      |                                  ^~
+exercises.c:131:49: error: comparison between pointer and integer [-Werror]
+  131 |          if(*dato == '(' || dato == '[' || dato == '{') push(pila, dato);
+      |                                                 ^~
+exercises.c:130:16: error: ‘dato’ may be used uninitialized [-Werror=maybe-uninitialized]
+  130 |          *dato = cadena[i];
+      |          ~~~~~~^~~~~~~~~~~
+exercises.c:126:10: note: ‘dato’ was declared here
+  126 |    char* dato;
+      |          ^~~~
+cc1: all warnings being treated as errors
+5058402
