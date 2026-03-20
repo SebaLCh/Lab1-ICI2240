@@ -101,3 +101,18 @@ exercises.c:68:11: error: returning ‘int *’ from a function with return type
    68 |    return cont;
       |           ^~~~
 b5a71a2
+Fri Mar 20 06:00:21 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:15: error: invalid operands to binary + (have ‘int *’ and ‘int *’)
+   64 |          cont += (int*)elemento;
+      |               ^~ ~~~~~~~~~~~~~~
+      |                  |
+      |                  int *
+exercises.c:68:11: error: returning ‘int **’ from a function with return type ‘int’ makes integer from pointer without a cast [-Wint-conversion]
+   68 |    return &cont;
+      |           ^~~~~
+0e7f01d
