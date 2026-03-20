@@ -43,10 +43,6 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
-   for(int i = 1; i <=10; i++)
-      {
-         
-      }
    return L;
 }
 
@@ -56,16 +52,8 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   int* cont = 0;
    
-   void* elemento = first(L);
-   while(elemento != NULL)
-      {
-         cont += (int*)elemento;
-         elemento = next(L);
-      }
-   
-   return &cont;
+   return 0;
 }
 
 /*
@@ -79,6 +67,12 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem){
 
+   void* actual = first(L);
+   while(actual != NULL)
+      {
+         if(actual == elem) popCurrent(L);
+         actual = next(L);
+      }
 }
 
 /*
