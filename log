@@ -270,3 +270,52 @@ Fri Mar 20 10:44:09 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 3836aa4
+Fri Mar 20 11:04:28 PM UTC 2026: 
+ exercises.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:127:18: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+  127 |    Stack* pila = createStack()
+      |                  ^~~~~~~~~~~
+      |                  create_stack
+exercises.c:127:18: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+exercises.c:128:4: error: expected ‘,’ or ‘;’ before ‘for’
+  128 |    for(int i = 0; i < strlen(cadena); i++)
+      |    ^~~
+exercises.c:128:19: error: ‘i’ undeclared (first use in this function)
+  128 |    for(int i = 0; i < strlen(cadena); i++)
+      |                   ^
+exercises.c:128:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:128:42: error: expected ‘;’ before ‘)’ token
+  128 |    for(int i = 0; i < strlen(cadena); i++)
+      |                                          ^
+      |                                          ;
+exercises.c:128:42: error: expected statement before ‘)’ token
+exercises.c:131:67: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  131 |          if(dato == '(' || dato == '[' || dato == '{') push(pila, dato);
+      |                                                                   ^~~~
+      |                                                                   |
+      |                                                                   char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:137:25: error: comparison between pointer and integer [-Werror]
+  137 |             else if(aux == '(' && dato != ')' || aux == '[' && dato != ']' || aux == '{' && dato != '}')
+      |                         ^~
+exercises.c:137:54: error: comparison between pointer and integer [-Werror]
+  137 |             else if(aux == '(' && dato != ')' || aux == '[' && dato != ']' || aux == '{' && dato != '}')
+      |                                                      ^~
+exercises.c:137:32: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  137 |             else if(aux == '(' && dato != ')' || aux == '[' && dato != ']' || aux == '{' && dato != '}')
+      |                     ~~~~~~~~~~~^~~~~~~~~~~~~~
+exercises.c:137:83: error: comparison between pointer and integer [-Werror]
+  137 |             else if(aux == '(' && dato != ')' || aux == '[' && dato != ']' || aux == '{' && dato != '}')
+      |                                                                                   ^~
+exercises.c:137:90: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  137 |             else if(aux == '(' && dato != ')' || aux == '[' && dato != ']' || aux == '{' && dato != '}')
+      |                                                                               ~~~~~~~~~~~^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+a351a4b
