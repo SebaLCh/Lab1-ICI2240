@@ -127,3 +127,14 @@ exercises.c:73:20: error: comparison between pointer and integer [-Werror]
       |                    ^~
 cc1: all warnings being treated as errors
 391fbb8
+Fri Mar 20 06:04:36 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:73:26: error: comparison between pointer and integer [-Werror]
+   73 |          if((int*)actual == elem) popCurrent(L);
+      |                          ^~
+cc1: all warnings being treated as errors
+747b702
