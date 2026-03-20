@@ -557,3 +557,13 @@ exercises.c:130:15: error: assignment to ‘char *’ from ‘char’ makes poin
   130 |          dato = cadena[i];
       |               ^
 ef8d1bf
+Fri Mar 20 11:14:24 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:130:23: error: initialization of ‘char *’ from ‘char’ makes pointer from integer without a cast [-Wint-conversion]
+  130 |          char* dato = cadena[i];
+      |                       ^~~~~~
+ecbca44
