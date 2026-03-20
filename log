@@ -48,3 +48,20 @@ Fri Mar 20 05:54:37 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 3ee2b37
+Fri Mar 20 05:58:30 PM UTC 2026: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:18: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   64 |          cont += (int)elemento;
+      |                  ^
+exercises.c:65:28: error: expected ‘;’ before ‘}’ token
+   65 |          elemento = next(L)
+      |                            ^
+      |                            ;
+   66 |       }
+      |       ~                     
+cc1: all warnings being treated as errors
+d5a6d6d
