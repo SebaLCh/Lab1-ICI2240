@@ -414,3 +414,13 @@ exercises.c:137:37: error: invalid type argument of unary ‘*’ (have ‘int�
       |                                     ^~~~~
 cc1: all warnings being treated as errors
 e3b83ac
+Fri Mar 20 11:10:34 PM UTC 2026: 
+ exercises.c | 7 -------
+ 1 file changed, 7 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:67: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |          if(dato == '(' || dato == '[' || dato == '{') push(pila, *dato);
+      |                                                                   ^~~~~
+e7890eb
