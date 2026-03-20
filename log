@@ -213,3 +213,17 @@ exercises.c:65:18: error: invalid use of void expression
       |                  ^
 cc1: all warnings being treated as errors
 98e425a
+Fri Mar 20 10:37:47 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:19: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   65 |          *cont += (int)elemento;
+      |                   ^
+exercises.c:68:11: error: returning ‘int *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Wint-conversion]
+   68 |    return cont;
+      |           ^~~~
+cc1: all warnings being treated as errors
+2f27f35
