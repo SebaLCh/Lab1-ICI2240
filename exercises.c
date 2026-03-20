@@ -134,7 +134,7 @@ int parentesisBalanceados(char *cadena) {
             
             char* aux = top(pila);
             if(aux == NULL) return 0;
-            else if((aux == '(' && dato != ')') ||( aux == '[' && dato != ']') || (aux == '{' && dato != '}'))
+            else if((*aux == '(' && *dato != ')') ||( aux == '[' && dato != ']') || (aux == '{' && dato != '}'))
                return 0;
          }
       }
