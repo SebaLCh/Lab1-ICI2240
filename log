@@ -639,3 +639,14 @@ exercises.c:142:9: error: assignment to ‘char *’ from ‘char’ makes point
       |         ^
 cc1: all warnings being treated as errors
 1cdfc5f
+Fri Mar 20 11:26:11 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:142:12: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  142 |    *dato = (char)top(pila);
+      |            ^
+cc1: all warnings being treated as errors
+ad3e030
