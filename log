@@ -189,3 +189,13 @@ exercises.c:65:18: error: cast from pointer to integer of different size [-Werro
       |                  ^
 cc1: all warnings being treated as errors
 152bab7
+Fri Mar 20 10:36:43 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:15: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   65 |          cont += elemento;
+      |               ^~
+a69497f
