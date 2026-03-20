@@ -199,3 +199,17 @@ exercises.c:65:15: error: assignment to ‘int’ from ‘void *’ makes intege
    65 |          cont += elemento;
       |               ^~
 a69497f
+Fri Mar 20 10:37:22 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:23: error: dereferencing ‘void *’ pointer [-Werror]
+   65 |          cont += (int)*elemento;
+      |                       ^~~~~~~~~
+exercises.c:65:18: error: invalid use of void expression
+   65 |          cont += (int)*elemento;
+      |                  ^
+cc1: all warnings being treated as errors
+98e425a
