@@ -611,3 +611,17 @@ exercises.c:142:10: error: assignment to ‘char’ from ‘void *’ makes inte
   142 |    *dato = top(pila);
       |          ^
 aabcc26
+Fri Mar 20 11:25:12 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:130:16: error: ‘dato’ may be used uninitialized [-Werror=maybe-uninitialized]
+  130 |          *dato = cadena[i];
+      |          ~~~~~~^~~~~~~~~~~
+exercises.c:126:10: note: ‘dato’ was declared here
+  126 |    char* dato;
+      |          ^~~~
+cc1: all warnings being treated as errors
+ec0c236
