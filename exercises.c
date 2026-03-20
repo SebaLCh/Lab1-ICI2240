@@ -70,7 +70,7 @@ void eliminaElementos(List*L, int elem){
    void* actual = first(L);
    while(actual != NULL)
       {
-         if((int*)actual == elem) popCurrent(L);
+         if((int)actual == elem) popCurrent(L);
          actual = next(L);
       }
 }
