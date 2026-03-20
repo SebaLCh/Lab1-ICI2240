@@ -1,0 +1,14 @@
+Fri Mar 20 05:49:20 PM UTC 2026: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:84:10: error: ‘pilaAux’ may be used uninitialized [-Werror=maybe-uninitialized]
+   84 |          pushFront(pilaAux, elemento);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:79:11: note: ‘pilaAux’ was declared here
+   79 |    Stack* pilaAux;
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+c1b38cf
