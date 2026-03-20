@@ -625,3 +625,17 @@ exercises.c:126:10: note: ‘dato’ was declared here
       |          ^~~~
 cc1: all warnings being treated as errors
 ec0c236
+Fri Mar 20 11:25:52 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:142:11: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+  142 |    dato = (char)top(pila);
+      |           ^
+exercises.c:142:9: error: assignment to ‘char *’ from ‘char’ makes pointer from integer without a cast [-Wint-conversion]
+  142 |    dato = (char)top(pila);
+      |         ^
+cc1: all warnings being treated as errors
+1cdfc5f
